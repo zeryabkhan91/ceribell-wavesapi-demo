@@ -7,6 +7,10 @@ import type {
 import axios from 'axios';
 import { server } from 'constants/server';
 
+if (!server.baseApiUrl) {
+  throw new Error('Please set VITE_API_URL in .env file');
+}
+
 const api = axios.create({
   baseURL: server.baseApiUrl,
 });
