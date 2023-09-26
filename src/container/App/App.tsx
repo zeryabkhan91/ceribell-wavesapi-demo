@@ -17,7 +17,7 @@ const App: FunctionComponent<Props> = function () {
       sx={{ minHeight: '100vh' }}
     >
       <Grid item xs={3}>
-        <div className='m-auto font-sans font-serif font-mono antialiased text-center'>
+        <div className='m-auto font-sans antialiased text-center'>
           <h1 className='text-indigo-700'>Hello World</h1>
         </div>
       </Grid>
