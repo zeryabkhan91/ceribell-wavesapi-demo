@@ -14,3 +14,6 @@ Note
 ---------------
 
 There is a lot of data to render in the graphs, so it will take some time to load in graphs
+
+- you need to install and enable this extension for now as we are getting CORS error in google chrome
+<https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf>
