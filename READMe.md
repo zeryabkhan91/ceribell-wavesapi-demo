@@ -10,7 +10,7 @@
 - finally run `yarn dev`
 - the project should be up by now and ready to serve on [Open Project](http://localhost:3000)
 
-Heading level 1
+Note
 ---------------
 
 There is a lot of data to render in the graphs, so it will take some time to load in graphs
