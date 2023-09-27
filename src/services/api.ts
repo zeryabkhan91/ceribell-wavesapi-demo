@@ -13,12 +13,13 @@ if (!server.baseApiUrl) {
 
 const api = axios.create({
   baseURL: server.baseApiUrl,
+  withCredentials: false,
 });
 
 api.interceptors.request.use((config: InternalAxiosRequestConfig) => config);
 
 api.interceptors.response.use(
-  (response: AxiosResponse) => response.data,
+  (response: AxiosResponse) => response,
   (error: AxiosError<any>) => {
     // eslint-disable-next-line
     console.error(error);

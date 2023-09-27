@@ -10,7 +10,7 @@ const GridLayout: FunctionComponent<Props> = () => (
   <Grid
     container
     spacing={0}
-    direction='column'
+    direction='row'
     alignItems='center'
     justifyContent='center'
     sx={{ minHeight: '100vh' }}
