@@ -1,5 +1,3 @@
-import Highcharts from 'highcharts';
-import HighchartsReact from 'highcharts-react-official';
 import { FunctionComponent } from 'react';
 
 interface Props {
@@ -34,12 +32,6 @@ export const EEGChart: FunctionComponent<Props> = ({ data, type }) => {
 
     tooltip: {
       valueDecimals: 2,
-      formatter() {
-        // eslint-disable-next-line
-        const value: number = this.y as unknown as number;
-
-        return `${value.toFixed(2)}: ${value < 40 ? 'Good' : 'Bad'}`;
-      },
       shared: true,
     },
 
@@ -60,22 +52,6 @@ export const EEGChart: FunctionComponent<Props> = ({ data, type }) => {
         text: null,
       },
       crosshair: false,
-    },
-
-    credits: {
-      enabled: false,
-    },
-
-    scrollbar: {
-      enabled: true,
-    },
-
-    navigator: {
-      enabled: true,
-    },
-
-    rangeSelector: {
-      selected: 1,
     },
 
     series: [

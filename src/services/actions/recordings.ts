@@ -7,6 +7,6 @@ export const GET_RECORDINGS_ENDPOINT = '/recordings/index.json';
 const getRecordings = (cancelToken: CancelToken) =>
   api.get<RecordingsResponse>(GET_RECORDINGS_ENDPOINT, { cancelToken });
 
-const getRecordingFile = (link: string) => api.get(`/recordings/${link}`);
+const getRecordingFile = (link: string) => api.get(`/${link}`);
 
 export { getRecordings, getRecordingFile };

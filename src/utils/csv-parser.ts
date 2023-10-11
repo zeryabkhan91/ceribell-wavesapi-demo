@@ -22,8 +22,6 @@ export const convertColumnsToRows = (csvString: string): Promise<number[][]> =>
         if (!Array.isArray(data[index])) {
           data[index] = [];
         }
-
-        data[index].push(parseFloat((+value * 0.0447).toString()));
       },
       complete() {
         resolve(data);

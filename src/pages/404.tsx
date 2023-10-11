@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-export const PageNotFound = () => (
+export const Test = () => (
   <div>
     <h2>Nothing to see here!</h2>
     <p>

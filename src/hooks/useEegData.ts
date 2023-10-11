@@ -36,16 +36,11 @@ export const useEegData = () => {
             getRecordingFile(item).then(async (res) => {
               const isWaves = item.includes('waves');
               if (isWaves) {
-                const arr = await convertColumnsToRows(res.data);
-                setWaves([...waves, ...arr]);
+                setWaves([...waves, ...[]]);
                 return;
               }
-              const arr = csvDataToArray(
-                res.data,
-                isWaves ? WAVES_MULTIPLIER : undefined
-              );
 
-              setQualities([...qualities, ...arr]);
+              setQualities([...qualities, ...[]]);
             });
           });
         });

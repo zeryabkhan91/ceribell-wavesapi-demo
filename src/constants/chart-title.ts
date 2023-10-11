@@ -10,18 +10,6 @@ export const ChartTitle: Record<
     subHeading: 'Fp1 - F7',
   },
   2: {
-    heading: '2 - 3',
-    subHeading: 'F7 - T3',
-  },
-  3: {
-    heading: '3 - 4',
-    subHeading: 'T3 - T5',
-  },
-  4: {
-    heading: '4 - 5',
-    subHeading: 'T5 - O1',
-  },
-  5: {
     heading: '6 - 7',
     subHeading: 'Fp2 - F8',
   },
